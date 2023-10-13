@@ -15,6 +15,13 @@ let initialState = {
         {name: 'Transport', image: transport},
         {name: 'Animal', image: animals},
         {name: 'Home', image: home},
+    ],
+    categoriesColors: [
+        '#FC2847',
+        '#A8E4A0',
+        '#CCCCFF',
+        '#98FB98',
+        '#F64A46'
     ]
 }
 
@@ -28,6 +35,11 @@ const categoriesReducer = (state = initialState, action) => {
         case DELETE_CATEGORY:
             return {
                 ...state,
+                categories: state.categories.filter(e => {
+                    if (e.name !== action.name) {
+                        return e;
+                    }
+                })
             }
         default:
             return state;
@@ -35,6 +47,6 @@ const categoriesReducer = (state = initialState, action) => {
 }
 
 export const addCategory = (name) => ({type: ADD_CATEGORY, category: name});
-export const deleteCategory = (category) => ({type: DELETE_CATEGORY, category});
+export const deleteCategory = (name) => ({type: DELETE_CATEGORY, name});
 
 export default categoriesReducer;

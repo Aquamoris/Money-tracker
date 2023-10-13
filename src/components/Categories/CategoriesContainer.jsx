@@ -5,7 +5,8 @@ import Categories from './Categories';
 
 let mapStateToProps = (state) => {
     return {
-        categories: state.categoriesElement.categories
+        categories: state.categoriesElement.categories,
+        colors: state.categoriesElement.categoriesColors
     }
 }
 
