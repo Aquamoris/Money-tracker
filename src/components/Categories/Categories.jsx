@@ -6,25 +6,22 @@ import {useLocation} from "react-router-dom";
 const Categories = (props) => {
 
     const location = useLocation();
-    let categories = '404';
+    let categoriesSource = [];
 
     if (location.pathname === '/') {
-        categories = props.expenseCategories.map(e => (
-            <Category
-                name={e.name}
-                image={e.image}
-                clickDeleteCategory={clickDeleteCategory}
-            />
-        ));
+        categoriesSource = props.expenseCategories;
     } else if (location.pathname === '/income') {
-        categories = props.incomeCategories.map(e => (
-            <Category
-                name={e.name}
-                image={e.image}
-                clickDeleteCategory={clickDeleteCategory}
-            />
-        ));
+        categoriesSource = props.incomeCategories;
     }
+
+    let categories = categoriesSource.map(e => (
+        <Category
+            name={e.name}
+            image={e.image}
+            color={e.color}
+            clickDeleteCategory={clickDeleteCategory}
+        />
+    ));
 
     function clickAddCategory() {
         let body = prompt();

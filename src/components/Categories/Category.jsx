@@ -4,7 +4,7 @@ import drag from '../../assets/drag.png'
 
 const Category = (props) => {
     return (
-        <div className={style.wrapper}>
+        <div className={style.wrapper} style={{backgroundColor: props.color}}>
             <div className={style.category} key={props.name} id={props.name} onClick={props.clickDeleteCategory}>
                 <img src={props.image} alt={props.name}/>
                 <div>{props.name}</div>

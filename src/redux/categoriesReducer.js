@@ -12,16 +12,16 @@ const DELETE_CATEGORY_INCOME = 'DELETE_CATEGORY_INCOME';
 
 let initialState = {
     expenseCategories: [
-        {name: 'Groceries', image: groceries},
-        {name: 'Entertainments', image: entertainments},
-        {name: 'Transport', image: transport},
-        {name: 'Animal', image: animals},
-        {name: 'Home', image: home},
+        {name: 'Groceries', image: groceries, color: '#98FB98'},
+        {name: 'Entertainments', image: entertainments, color: '#F64A46'},
+        {name: 'Transport', image: transport, color: '#FFFF99'},
+        {name: 'Animal', image: animals, color: 'rgba(117,90,81,0.99)'},
+        {name: 'Home', image: home, color: '#9c85bb'},
     ],
     incomeCategories: [
-        {name: 'Salary', image: groceries},
-        {name: 'Salary №2', image: groceries},
-        {name: 'Part-time work', image: groceries},
+        {name: 'Salary', image: groceries, color: '#46c7bb'},
+        {name: 'Salary №2', image: groceries, color: '#CCCCFF'},
+        {name: 'Part-time work', image: groceries, color: '#FFFF99'},
     ],
     categoriesColors: [
         '#FC2847',
@@ -41,7 +41,7 @@ const categoriesReducer = (state = initialState, action) => {
         case ADD_CATEGORY_EXPENSE:
             return {
                 ...state,
-                expenseCategories: [...state.expenseCategories, {name: action.category, image: none}]
+                expenseCategories: [...state.expenseCategories, {name: action.category, image: none, color: '#A8E4A0'}]
             }
         case DELETE_CATEGORY_EXPENSE:
             return {
@@ -55,7 +55,7 @@ const categoriesReducer = (state = initialState, action) => {
         case ADD_CATEGORY_INCOME:
             return {
                 ...state,
-                incomeCategories: [...state.incomeCategories, {name: action.category, image: none}]
+                incomeCategories: [...state.incomeCategories, {name: action.category, image: none, color: '#715345'}]
             }
         case DELETE_CATEGORY_INCOME:
             return {
