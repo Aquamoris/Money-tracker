@@ -6,7 +6,7 @@ let reducers = combineReducers({
     incomePage: incomeReducer,
     expensePage: incomeReducer,
     reportPage: incomeReducer,
-    categoriesElement: categoriesReducer
+    categories: categoriesReducer
 });
 
 let store = createStore(reducers);

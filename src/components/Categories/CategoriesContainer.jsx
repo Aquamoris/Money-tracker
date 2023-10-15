@@ -1,15 +1,25 @@
-import { connect } from "react-redux";
-import { addCategory } from "../../redux/categoriesReducer";
-import { deleteCategory } from "../../redux/categoriesReducer";
+import {connect} from "react-redux";
+import {
+    addCategoryExpense,
+    deleteCategoryExpense,
+    addCategoryIncome,
+    deleteCategoryIncome
+} from "../../redux/categoriesReducer";
 import Categories from './Categories';
 
 let mapStateToProps = (state) => {
     return {
-        categories: state.categoriesElement.categories,
-        colors: state.categoriesElement.categoriesColors
+        expenseCategories: state.categories.expenseCategories,
+        incomeCategories: state.categories.incomeCategories
     }
 }
 
-const CategoriesContainer = connect(mapStateToProps, {addCategory, deleteCategory})(Categories);
+const CategoriesContainer = connect(mapStateToProps,
+    {
+        addCategoryExpense,
+        deleteCategoryExpense,
+        addCategoryIncome,
+        deleteCategoryIncome
+    })(Categories);
 
 export default CategoriesContainer;
