@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap');
 
+:root {
+    --income-color: #009D7C;
+    --expense-color: #F64A46;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;

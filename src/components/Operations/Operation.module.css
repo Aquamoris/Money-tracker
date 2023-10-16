@@ -1,0 +1,11 @@
+.operation {
+    border: thin solid black;
+}
+
+.expense {
+    color: var(--expense-color);
+}
+
+.income {
+    color: var(--income-color);
+}

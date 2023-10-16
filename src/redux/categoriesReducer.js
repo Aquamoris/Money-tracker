@@ -36,12 +36,16 @@ let initialState = {
     ],
 }
 
+
 const categoriesReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_CATEGORY_EXPENSE:
+            if (state.expenseCategories.some(e => e.name === action.name)) {
+                return { ...state }
+            }
             return {
                 ...state,
-                expenseCategories: [...state.expenseCategories, {name: action.category, image: none, color: '#A8E4A0'}]
+                expenseCategories: [...state.expenseCategories, {name: action.name, image: none, color: '#A8E4A0'}]
             }
         case DELETE_CATEGORY_EXPENSE:
             return {
@@ -53,9 +57,12 @@ const categoriesReducer = (state = initialState, action) => {
                 })
             }
         case ADD_CATEGORY_INCOME:
+            if (state.incomeCategories.some(e => e.name === action.name)) {
+                return { ...state }
+            }
             return {
                 ...state,
-                incomeCategories: [...state.incomeCategories, {name: action.category, image: none, color: '#715345'}]
+                incomeCategories: [...state.incomeCategories, {name: action.name, image: none, color: '#A8E4A0'}]
             }
         case DELETE_CATEGORY_INCOME:
             return {
@@ -71,9 +78,9 @@ const categoriesReducer = (state = initialState, action) => {
     }
 }
 
-export const addCategoryExpense = (name) => ({type: ADD_CATEGORY_EXPENSE, category: name});
+export const addCategoryExpense = (name) => ({type: ADD_CATEGORY_EXPENSE, name});
 export const deleteCategoryExpense = (name) => ({type: DELETE_CATEGORY_EXPENSE, name});
-export const addCategoryIncome = (name) => ({type: ADD_CATEGORY_INCOME, category: name});
+export const addCategoryIncome = (name) => ({type: ADD_CATEGORY_INCOME, name});
 export const deleteCategoryIncome = (name) => ({type: DELETE_CATEGORY_INCOME, name});
 
 export default categoriesReducer;
