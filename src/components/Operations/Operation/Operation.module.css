@@ -1,5 +1,10 @@
 .operation {
     border: thin solid black;
+    padding: 15px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .expense {

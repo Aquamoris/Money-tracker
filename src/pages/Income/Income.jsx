@@ -1,13 +1,13 @@
 import React from 'react';
 import CategoriesContainer from "../../components/Categories/CategoriesContainer";
 import Navbar from "../../components/Navbar/Navbar";
-import OperationListContainer from "../../components/Operations/OperationListContainer";
+import OperationsListContainer from "../../components/Operations/OperationsList/OperationsListContainer";
 
 const Income = () => {
     return (
         <div>
             <CategoriesContainer />
-            <OperationListContainer />
+            <OperationsListContainer />
             <Navbar />
         </div>
     );

@@ -1,7 +1,9 @@
-import { combineReducers, legacy_createStore as createStore } from 'redux';
+import {applyMiddleware, combineReducers, legacy_createStore as createStore} from 'redux';
 import incomeReducer from './incomeReducer';
 import categoriesReducer from './categoriesReducer';
 import operationsReducer from "./operationsReducer";
+import thunk from "redux-thunk";
+
 
 let reducers = combineReducers({
     incomePage: incomeReducer,
@@ -11,7 +13,7 @@ let reducers = combineReducers({
     operations: operationsReducer
 });
 
-let store = createStore(reducers);
+let store = createStore(reducers, applyMiddleware(thunk));
 
 window.store = store;
 
