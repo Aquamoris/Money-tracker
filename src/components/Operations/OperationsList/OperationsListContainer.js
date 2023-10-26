@@ -5,7 +5,7 @@ import {addOperation, deleteAndUpdateOperations} from "../../../redux/operations
 const mapStateToProps = (state) => {
     return {
         operations: state.operations.operations,
-        listFilter: state.operations.listFilter
+        filterButtons: state.operations.filterButtons
     }
 }
 

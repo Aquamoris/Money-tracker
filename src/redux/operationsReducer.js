@@ -6,8 +6,16 @@ let initialState = {
     operations: [
         {id: 0, kind: 'expense', category: 'Animals', amount: 300},
         {id: 1, kind: 'income', category: 'Salary', amount: 300},
-        {id: 2, kind: 'expense', category: 'Transport', amount: 500}
+        {id: 2, kind: 'expense', category: 'Transport', amount: 500},
+        {id: 3, kind: 'expense', category: 'Transport', amount: 500},
+        {id: 4, kind: 'income', category: 'Salary', amount: 1500},
+        {id: 5, kind: 'income', category: 'Salary 2', amount: 5000},
+        {id: 6, kind: 'income', category: 'Salary', amount: 15000},
     ],
+    filterButtons: [
+        {type: 'expense'},
+        {type: 'income'}
+    ]
 }
 
 const operationsReducer = (state = initialState, action) => {

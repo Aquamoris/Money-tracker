@@ -16,6 +16,7 @@ const Categories = (props) => {
 
     let categories = categoriesSource.map(e => (
         <Category
+            key={e.id}
             name={e.name}
             image={e.image}
             color={e.color}

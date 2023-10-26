@@ -3,3 +3,26 @@
     margin: 10px auto;
     height: 80vh;
 }
+
+.operations {
+    height: 75vh;
+    overflow: scroll;
+}
+
+.filterButtonsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filterButton {
+    font-size: 12px;
+    padding: 10px 24px;
+    border-radius: 16px;
+    border: solid thin rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.activeButton {
+    background-color: rgba(0, 0, 0, 0.1);
+}
