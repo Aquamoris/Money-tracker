@@ -6,6 +6,7 @@ import {
     deleteCategoryIncome
 } from "../../redux/categoriesReducer";
 import Categories from './Categories';
+import {addNewOperation} from "../../redux/operationsReducer";
 
 let mapStateToProps = (state) => {
     return {
@@ -19,7 +20,8 @@ const CategoriesContainer = connect(mapStateToProps,
         addCategoryExpense,
         deleteCategoryExpense,
         addCategoryIncome,
-        deleteCategoryIncome
+        deleteCategoryIncome,
+        addNewOperation,
     })(Categories);
 
 export default CategoriesContainer;

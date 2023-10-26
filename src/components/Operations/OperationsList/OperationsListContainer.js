@@ -10,7 +10,6 @@ const mapStateToProps = (state) => {
 }
 
 const OperationsListContainer = connect(mapStateToProps, {
-    addOperation,
     deleteAndUpdateOperations
 })(OperationsList);
 

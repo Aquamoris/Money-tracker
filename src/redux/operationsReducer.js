@@ -61,11 +61,17 @@ const deleteOperation = (id) => ({
     type: DELETE_OPERATION,
     id
 });
-
-export const updateOperationsID = () => ({
+const updateOperationsID = () => ({
     type: UPDATE_ID
 })
 
+// Thunks
+export const addNewOperation = (kind, category, amount) => {
+    return (dispatch) => {
+        dispatch(addOperation(kind, category, amount));
+        dispatch(updateOperationsID());
+    }
+}
 export const deleteAndUpdateOperations = (id) => {
     return (dispatch) => {
         dispatch(deleteOperation(id));

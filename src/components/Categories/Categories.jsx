@@ -20,7 +20,7 @@ const Categories = (props) => {
             name={e.name}
             image={e.image}
             color={e.color}
-            clickDeleteCategory={clickDeleteCategory}
+            addNewOperation={props.addNewOperation}
         />
     ));
 
