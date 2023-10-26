@@ -57,7 +57,7 @@ export const addOperation = (kind, category, amount) => ({
     category,
     amount
 });
-export const deleteOperation = (id) => ({
+const deleteOperation = (id) => ({
     type: DELETE_OPERATION,
     id
 });
@@ -68,7 +68,6 @@ export const updateOperationsID = () => ({
 
 export const deleteAndUpdateOperations = (id) => {
     return (dispatch) => {
-        dispatch(updateOperationsID());
         dispatch(deleteOperation(id));
         dispatch(updateOperationsID());
     }
