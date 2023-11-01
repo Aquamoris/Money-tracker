@@ -20,7 +20,7 @@ let initialState = {
     ],
     incomeCategories: [
         {name: 'Salary', image: groceries, color: '#46c7bb'},
-        {name: 'Salary №2', image: groceries, color: '#CCCCFF'},
+        {name: 'Salary 2', image: groceries, color: '#CCCCFF'},
         {name: 'Part-time work', image: groceries, color: '#FFFF99'},
     ],
     categoriesColors: [

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import style from './OperationsList.module.css';
 import Operation from "../Operation/Operation";
+import clear from '../../../assets/clear.png';
 
 const OperationsList = (props) => {
     const [filter, setFilter] = useState(null);
@@ -44,6 +45,9 @@ const OperationsList = (props) => {
                         value={e.type}
                         onClick={handler}>{e.type.charAt(0).toUpperCase() + e.type.slice(1)}</button>
                 )) }
+                <div className={style.clearButton} onClick={() => setFilter(null)}>
+                    <img src={clear} alt="clear"/>
+                </div>
             </div>
         </div>
     );

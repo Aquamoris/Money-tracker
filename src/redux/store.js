@@ -3,12 +3,13 @@ import incomeReducer from './incomeReducer';
 import categoriesReducer from './categoriesReducer';
 import operationsReducer from "./operationsReducer";
 import thunk from "redux-thunk";
+import reportReducer from "./reportReducer";
 
 
 let reducers = combineReducers({
     incomePage: incomeReducer,
     expensePage: incomeReducer,
-    reportPage: incomeReducer,
+    reportPage: reportReducer,
     categories: categoriesReducer,
     operations: operationsReducer
 });

@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from "../../components/Navbar/Navbar";
-import SourceToggle from "../../components/Report/SourceToggle";
+import SourceToggleContainer from "../../components/Report/SourceToggleContainer";
+import PieChartContainer from "../../components/Report/PieChartContainer";
 
 const Report = () => {
     return (
         <div>
-            <SourceToggle />
-            Report
+            <SourceToggleContainer />
+            <PieChartContainer />
             <Navbar />
         </div>
     );

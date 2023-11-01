@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Income from "./pages/Income/Income";
 import Expense from "./pages/Expense/Expense";
-import Report from "./pages/Report/Report";
 import Settings from "./pages/Settings/Settings";
+import Report from "./pages/Report/Report";
 
 function App() {
   return (

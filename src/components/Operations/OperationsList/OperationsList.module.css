@@ -13,16 +13,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .filterButton {
     font-size: 12px;
     padding: 10px 24px;
-    border-radius: 16px;
+    border-radius: 6px;
     border: solid thin rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .activeButton {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.clearButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid thin rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.clearButton img {
+    height: 20px;
+}
+
+.clearButton:active {
     background-color: rgba(0, 0, 0, 0.1);
 }

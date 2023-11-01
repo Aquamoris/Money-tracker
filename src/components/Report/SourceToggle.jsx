@@ -6,7 +6,13 @@ const SourceToggle = (props) => {
         <div>
             <span>Expense</span>
             <span>
-                <Switch color="default"/>
+                <Switch
+                    checked={props.reportMode}
+                    onClick={(e) => {
+                        props.changeMode(e.target.checked)
+                    }}
+                    color="default"
+                />
             </span>
             <span>Income</span>
         </div>

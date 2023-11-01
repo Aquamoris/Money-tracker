@@ -1,7 +1,7 @@
 .operation {
     border: thin solid black;
     padding: 15px;
-    border-radius: 16px;
+    border-radius: 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

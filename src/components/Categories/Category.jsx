@@ -25,7 +25,7 @@ const Category = (props) => {
     }
 
     return (editMode
-            ? <div className={style.wrapper} id={props.name} onBlur={newOperation}>
+            ? <div className={style.wrapper + ' ' + style.sum} id={props.name} onBlur={newOperation}>
                 <span>Sum </span>
                 <span>
                     <input
@@ -35,8 +35,7 @@ const Category = (props) => {
                         type='text'/>
                 </span>
             </div>
-            : <div className={style.wrapper} onClick={() => setEditMode(!editMode)}
-                   style={{backgroundColor: props.color}}>
+            : <div className={style.wrapper} onClick={() => setEditMode(!editMode)}>
                 <div className={style.category} key={props.name} id={props.name}>
                     <img src={props.image} alt={props.name}/>
                     <div>{props.name}</div>
