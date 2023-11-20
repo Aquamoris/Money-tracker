@@ -5,6 +5,10 @@
     border-radius: 6px;
 }
 
+.wrapper:nth-child(n) {
+    margin: 5px;
+}
+
 .category {
     display: flex;
     flex-direction: row;
@@ -15,4 +19,14 @@
 .category img {
     width: 25px;
     height: 25px;
+}
+
+.iconItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: thin solid black;
+    border-radius: 2px;
 }

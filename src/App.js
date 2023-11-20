@@ -8,14 +8,14 @@ import Report from "./pages/Report/Report";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path='/' element={<Expense />} />
-          <Route path='/income' element={<Income />} />
-          <Route path='/report' element={<Report />} />
-          <Route path='/settings' element={<Settings />} />
-        </Routes>
-      </div>
+          <div className="App">
+            <Routes>
+              <Route path='/' element={<Expense />} />
+              <Route path='/income' element={<Income />} />
+              <Route path='/report' element={<Report />} />
+              <Route path='/settings' element={<Settings />} />
+            </Routes>
+          </div>
     </BrowserRouter>
   );
 }

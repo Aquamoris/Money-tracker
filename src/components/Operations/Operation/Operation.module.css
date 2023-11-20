@@ -7,6 +7,10 @@
     justify-content: space-between;
 }
 
+.operation:nth-child(2n+1) {
+    margin: 10px;
+}
+
 .expense {
     color: var(--expense-color);
 }

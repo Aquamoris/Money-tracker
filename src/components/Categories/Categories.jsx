@@ -21,6 +21,8 @@ const Categories = (props) => {
             image={e.image}
             color={e.color}
             addNewOperation={props.addNewOperation}
+            deleteCategoryIncome={props.deleteCategoryIncome}
+            deleteCategoryExpense={props.deleteCategoryExpense}
         />
     ));
 
@@ -36,14 +38,6 @@ const Categories = (props) => {
             props.addCategoryExpense(text);
         } else if (location.pathname === '/income') {
             props.addCategoryIncome(text);
-        }
-    }
-
-    function clickDeleteCategory(e) {
-        if (location.pathname === '/') {
-            props.deleteCategoryExpense(e.currentTarget.id);
-        } else if (location.pathname === '/income') {
-            props.deleteCategoryIncome(e.currentTarget.id);
         }
     }
 

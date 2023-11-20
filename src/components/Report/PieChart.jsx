@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import style from './Chart.module.css';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import {Doughnut} from "react-chartjs-2";
+import {Doughnut, Pie} from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
