@@ -32,10 +32,18 @@ const Operation = (props) => {
                     <button onClick={saveEdit}>Save</button>
                 </div>
                 : <div key={id} id={id} className={style.operation} onDoubleClick={activateEditMode}>
-                    <div>{props.category}</div>
+                    <div className={style.titleWrapper}>
+                        {props.category}
+                    </div>
                     <div className={props.kind === 'expense' ? style.expense : style.income}>
                         {props.kind === 'expense' ? '-' : '+'}
                         {props.amount}
+                    </div>
+                    <div className={style.deleteWrapper}></div>
+                    <div id={props.name} className={style.iconItem} style={{color: '#F64A46'}}
+                         onClick={deleteCategory}
+                    >
+                        &times;
                     </div>
                 </div>}
         </div>

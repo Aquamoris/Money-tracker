@@ -4,7 +4,6 @@ import drag from '../../assets/drag.png'
 import {useLocation} from "react-router-dom";
 
 const Category = (props) => {
-    console.log(props);
     const [editMode, setEditMode] = useState(false);
     const [amount, setAmount] = useState('');
 
