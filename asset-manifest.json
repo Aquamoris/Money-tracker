@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Money-tracker/static/css/main.116c30bb.css",
-    "main.js": "/Money-tracker/static/js/main.0993e7a6.js",
+    "main.css": "/Money-tracker/static/css/main.2427a6be.css",
+    "main.js": "/Money-tracker/static/js/main.04ccc012.js",
     "static/js/787.23d124b2.chunk.js": "/Money-tracker/static/js/787.23d124b2.chunk.js",
     "static/media/none.png": "/Money-tracker/static/media/none.a3101b5f6af555882ec9.png",
     "static/media/groceries.png": "/Money-tracker/static/media/groceries.47fc326d94e77a55429b.png",
@@ -11,12 +11,12 @@
     "static/media/home.png": "/Money-tracker/static/media/home.3ec7500df81344c3acaa.png",
     "static/media/clear.png": "/Money-tracker/static/media/clear.aabda8bbe93719f4de97.png",
     "index.html": "/Money-tracker/index.html",
-    "main.116c30bb.css.map": "/Money-tracker/static/css/main.116c30bb.css.map",
-    "main.0993e7a6.js.map": "/Money-tracker/static/js/main.0993e7a6.js.map",
+    "main.2427a6be.css.map": "/Money-tracker/static/css/main.2427a6be.css.map",
+    "main.04ccc012.js.map": "/Money-tracker/static/js/main.04ccc012.js.map",
     "787.23d124b2.chunk.js.map": "/Money-tracker/static/js/787.23d124b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.116c30bb.css",
-    "static/js/main.0993e7a6.js"
+    "static/css/main.2427a6be.css",
+    "static/js/main.04ccc012.js"
   ]
 }
