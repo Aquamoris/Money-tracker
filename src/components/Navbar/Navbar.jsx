@@ -14,9 +14,6 @@ const Navbar = () => {
             <div>
                 <NavLink to='/report' className={path => path.isActive ? style.active : ''}>Report</NavLink>
             </div>
-            <div>
-                <NavLink to='/settings' className={path => path.isActive ? style.active : ''}>Settings</NavLink>
-            </div>
         </nav>
     );
 };
