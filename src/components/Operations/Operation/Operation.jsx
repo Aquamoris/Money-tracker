@@ -31,7 +31,7 @@ const Operation = (props) => {
                     <button id={id} onClick={deleteCategory}>Delete</button>
                     <button onClick={saveEdit}>Save</button>
                 </div>
-                : <div key={id} id={id} className={style.operation} onDoubleClick={activateEditMode}>
+                : <div key={id} id={id} className={style.operation}>
                     <div className={style.titleWrapper}>
                         {props.category}
                     </div>
